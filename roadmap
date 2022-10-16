@@ -1,0 +1,33 @@
+#****app-with-mysql   >  9. line configure as app.config['MYSQL_DATABASE_HOST'] = 'serdar25.c2wdroidv8o1.us-east-1.rds.amazonaws.com'
+
+#****for both app-with-sqlite   and app-with-mysql  last part will be as seen below
+#app.run(debug=True)
+app.run(host='0.0.0.0', port=80)  
+
+#afterthen  git add . > git commit -m "flask-05 added" > git push 
+#check your github repo and see flask-05 added
+
+creat an instance  PROP; ec2 t2. micro keypair SG: SHH+HTTP (22, 80) 
+
+go terminal and connect ec2 with ssh 
+
+then execute commands in order as seen below
+
+sudo yum update -y
+
+sudo pip3 install flask
+
+sudo pip3 install flask-mysql
+
+sudo pip3 install sqlalchemy
+
+sudo pip3 install Flask-SQLAlchemy
+
+sudo yum install git -y
+
+sudo git clone https://github.com/johnwise2022/myprojects.git
+ls > see your repo
+cd (your repo name)
+ls > cd flasks-05...
+ls 
+sudo python3 app-with-mysql.py
